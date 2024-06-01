@@ -1,2 +1,2 @@
 # crud-node-firebase
-testing
+Testing with CRUD operations on Firebase using Express.js.
