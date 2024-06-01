@@ -1,0 +1,37 @@
+### Create User ###
+POST http://localhost:8383/users
+Content-Type: application/json
+
+{
+    "username": "jeffry fane",
+    "email": "jeff@example.com",
+    "password": "password1222223"
+}
+
+### Get All Users ###
+GET http://localhost:8383/users
+
+### Get User By ID ###
+GET http://localhost:8383/users/{userId}
+
+### Update User ###
+PATCH http://localhost:8383/users/{userId}
+Content-Type: application/json
+
+{
+    "username": "john_doe_updated",
+    "email": "john_updated@example.com",
+    "password": "updatedPassword123"
+}
+
+### Delete User ###
+DELETE http://localhost:8383/users/{userId}
+
+
+### Update User Password ###
+PATCH http://localhost:8383/users/:userId/password
+Content-Type: application/json
+
+{
+    "newPassword": "newPassword123"
+}
