@@ -26,12 +26,3 @@ Content-Type: application/json
 
 ### Delete User ###
 DELETE http://localhost:8383/users/{userId}
-
-
-### Update User Password ###
-PATCH http://localhost:8383/users/:userId/password
-Content-Type: application/json
-
-{
-    "newPassword": "newPassword123"
-}
